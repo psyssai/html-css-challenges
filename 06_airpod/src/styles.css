@@ -1,0 +1,156 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 410px;
+}
+
+.top {
+  width: auto;
+  height: 465px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.airpod-info {
+  border-radius: 10px;
+  width: 394px;
+  height: 449px;
+  background-color: white;
+}
+
+.airpod-info__img {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.airpod-info__info {
+  padding: 0px 25px;
+}
+
+.airpod-info__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.airpod-info__describe {
+  font-size: 14px;
+  padding: 10px 0px 20px 0px;
+  color: #b7bbc0;
+}
+
+.airpod-info__price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.airpod-info__score i {
+  color: #febe53;
+}
+.airpod-info__score i:nth-child(5) {
+  color: #d7dde4;
+}
+.airpod-info__score_point {
+  color: #c1c5c9;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.airpod-info__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom {
+  width: auto;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-info {
+  border-radius: 10px;
+  width: 386px;
+  height: 376px;
+  background-color: white;
+}
+
+.friend-info__image {
+  width: auto;
+  border-radius: 10px;
+  height: 164px;
+}
+
+.friend-info__image img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.friend-info__details {
+  position: relative;
+  top: -39px;
+}
+.friend-info__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.friend-info__profile img {
+  width: 78px;
+  height: 78px;
+  border-radius: 39px;
+  border: 3px solid white;
+}
+
+.friend-info__name {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0px 0px 5px 0px;
+}
+
+.friend-info__job {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #aeb2b8;
+  padding: 0px 0px 20px 0px;
+}
+
+.friend-info__buttons {
+  display: flex;
+  justify-content: center;
+}
+.friend-info__buttons button {
+  width: 152px;
+  height: 50px;
+  border: none;
+  margin: 0px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.friend-info__follow {
+  background-color: #6a75ff;
+  color: #ced1ff;
+  font-weight: bold;
+}
+.friend-info__Message {
+  background-color: #eaecff;
+  color: #a0a7ff;
+  font-weight: bold;
+}

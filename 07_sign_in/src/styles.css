@@ -1,0 +1,151 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f7f6fe;
+}
+
+.container {
+  width: 295px;
+  height: 600px;
+  background-color: #fcfcfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #f4f5f7;
+  box-shadow: 5px 20px 20px 5px #bdbdbd;
+}
+
+.contents-container {
+  width: 265px;
+  height: 570px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f8f8f8;
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.box__center {
+  height: 40px;
+  width: 140px;
+  background-color: #fafafc;
+  position: relative;
+  top: -20px;
+  margin-bottom: -10px;
+  border-radius: 20px;
+}
+.sign__title {
+  margin-bottom: 60px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.sign__id,
+.sign__pw {
+  display: flex;
+  justify-content: center;
+}
+.sign__text-input {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+}
+
+.sign__text-input::placeholder {
+  color: #dcdcdc;
+  padding-left: 8px;
+}
+
+.sign__text-input.pw {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.sign__forgot-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sign__forgot-text {
+  font-weight: 600;
+  font-size: 10px;
+  margin-bottom: 14px;
+}
+
+.sign__text {
+  font-size: 10px;
+  color: #bbbbbb;
+  font-weight: 600;
+}
+
+.text_red {
+  color: #ed909a;
+}
+
+.sign__remember {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[id="sign__remember-chk"] + label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #bcbcbc;
+  border-radius: 20%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input[id="sign__remember-chk"]:checked + label:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  color: #ea727f;
+}
+
+.sign__btn {
+  border: none;
+  border-radius: 30px;
+  height: 35px;
+  color: #eaeaea;
+  font-size: 10px;
+}
+.sign__sign-in-btn {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  background-color: #e2283e;
+}
+
+.sign__sign-in-text {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.sign__sns-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sns-btn {
+  width: 110px;
+}
+.sign__facebook {
+  background-color: #475a95;
+}
+
+.sign__twitter {
+  background-color: #5da1f2;
+}

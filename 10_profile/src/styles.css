@@ -1,0 +1,137 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f7f6fe;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.screen {
+  width: 330px;
+  height: 692px;
+  border: 10px solid #2799fa;
+  margin: 20px;
+  padding: 12px 0px;
+  position: relative;
+}
+
+.screen:after {
+  background-image: url("../bg.jpg");
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.2 !important;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0px 18px 0px 25px;
+}
+
+.header {
+  margin-top: 24px;
+  margin-bottom: 130px;
+  padding: 0px 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #747474;
+}
+
+main.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__img {
+  width: 68px;
+  height: 68px;
+  border-radius: 34px;
+  margin-bottom: 22px;
+}
+
+.profile__title {
+  color: #2799fa;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.profile__addr {
+  color: #747474;
+  font-size: 14px;
+  margin-bottom: 32px;
+  font-weight: 60px;
+}
+
+.profile__button {
+  width: 140px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.profile__buttons .Follow {
+  background-color: white;
+  color: #747474;
+}
+
+.profile__buttons .Message {
+  background-color: #2594f5;
+  color: #eaeaea;
+}
+
+.profile__infos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  color: #747474;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+nav.nav {
+  bottom: 10px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__icons {
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  color: #747474;
+}
+
+.nav__icons .fa-user {
+  color: #2594f5;
+}
+
+.nav__bar {
+  width: 100px;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #747474;
+}

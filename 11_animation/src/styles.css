@@ -1,0 +1,203 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f7f6fe;
+}
+
+.row {
+  width: 450px;
+  height: 300px;
+  margin: 30px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.box-camera {
+  background-color: #009e91;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.box-camera__info {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  visibility: hidden;
+}
+.box-camera:hover .box-camera__info {
+  visibility: visible;
+  animation: 2s camera-ani;
+  background-color: #27394a;
+  left: 10px;
+  top: -135px;
+}
+
+@keyframes camera-ani {
+  from {
+    background-color: #009e91;
+    left: 0px;
+    top: -145px;
+  }
+
+  to {
+    background-color: #27394a;
+    left: 10px;
+    top: -135px;
+  }
+}
+
+.box-game {
+  background-color: #f7a4a1;
+  text-align: center;
+  padding: 60px 0px;
+  overflow: hidden;
+}
+
+.box-game__info {
+  background-color: #27394a;
+  width: 300px;
+  height: 80px;
+  position: relative;
+  visibility: hidden;
+  text-align: start;
+  padding: 10px;
+}
+.box-game:hover {
+  padding: 30px 0px 0px 0px;
+  transition: all 1s ease-in-out;
+}
+
+.box-game:hover .box-game__info {
+  visibility: visible;
+  animation: 1s game-ani;
+  background-color: #27394a;
+  position: relative;
+  bottom: -10px;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes game-ani {
+  from {
+    background-color: #f7a4a1;
+    left: 0px;
+    bottom: -60px;
+  }
+
+  to {
+    background-color: #27394a;
+    bottom: -10px;
+  }
+}
+
+.box-game__info button {
+  position: relative;
+  right: -200px;
+}
+
+.box-safari {
+  background-color: #d6f0f9;
+  box-sizing: border-box;
+  widows: 300px;
+  height: 200px;
+  text-align: center;
+  padding: 60px 0px;
+  visibility: visible;
+  z-index: 10;
+  position: relative;
+  left: 0px;
+  top: -200px;
+}
+.box-safari:hover {
+  animation: 1s safari-ani;
+
+  width: 150px;
+  height: 100px;
+  padding: 30px 0px;
+  left: 70px;
+  top: -170px;
+}
+
+@keyframes safari-ani {
+  from {
+    width: 300px;
+    height: 200px;
+    padding: 60px 0px;
+    left: 0px;
+    top: -200px;
+  }
+
+  to {
+    width: 150px;
+    height: 100px;
+    padding: 30px 0px;
+    left: 70px;
+    top: -170px;
+  }
+}
+
+.box-safari:hover img {
+  animation: 1s safari-img-ani;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes safari-img-ani {
+  from {
+    width: 80px;
+    height: 80px;
+  }
+
+  to {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.box-safari__info {
+  background-color: #27394a;
+  width: 300px;
+  height: 200px;
+  box-sizing: border-box;
+  text-align: start;
+  padding: 150px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.authur {
+  color: #f15f5f;
+  font-size: 10px;
+}
+
+.box-camera__info__authur {
+  margin-bottom: 20px;
+}
+button.button {
+  background-color: #f15f5f;
+  border: none;
+  color: white;
+  width: 80px;
+  height: 25px;
+  font-size: 10px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
